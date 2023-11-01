@@ -1,0 +1,277 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333D79;
+  background-color: #FAEBEF;
+  margin: 20px;
+  padding: 45px;
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333D79;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: auto;
+}
+
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 5px 20px 0px 20px;
+  font-weight: bold;
+  color: #FAEBEF;
+  justify-content: center;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bolder;
+  color: white;
+
+}
+
+#theme-button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #333D79;
+  background-color: white;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.dark-mode {
+  background-color: #333D79;
+  color: #FAEBEF;
+}
+
+#about-ytvid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style for headings with the ID ".header-container" */
+.header-container {
+  display: flex;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.img-desc {
+  font-size: 12px;
+  margin: 10px 0;
+  /* Add 10px top and bottom margin */
+  padding: 10px;
+  /* Add 10px padding on all sides */
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 60px;
+  /* color: #5cbdb9; */
+}
+
+h2 {
+  font-size: 40px;
+  /* color: #FB9580; */
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  /* color: #FB9580; */
+  text-align: center;
+
+}
+
+p {
+  font-size: 20px;
+  /* color: black; */
+
+}
+
+#para {
+  padding: 0px 80px;
+  margin: 40px;
+}
+
+.header-button {
+  color: #FAEBEF;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #333D79;
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  border-color: white;
+}
+
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item:nth-of-type(1) {
+  width: 45%;
+}
+
+.header-item:nth-of-type(2) {
+  width: 45%;
+}
+
+#header-img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  max-width: 260px;
+}
+
+.protest-img {
+  width: auto;
+  height: 300px;
+}
+
+.petition-container {
+  display: flex;
+  /* justify-content: space-between; */
+  /* To push the divs to opposite ends */
+  /* align-items: flex-start; */
+  flex-direction: row;
+  gap: 20px;
+  /* Align the content at the top of the container */
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  /* width: 60%; */
+  /* Adjust the width as needed */
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 55%;
+  padding-right: 10px;
+  /* width: 38%; */
+  /* Adjust the width as needed */
+}
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {}
+
+
+/* Style set for all flex-items */
+.flex-item {
+  background: white;
+  color: #131516;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Define a ruleset for unvisited links */
+a:link {
+  color: #007bff;
+  /* Default link color (blue) */
+  text-decoration: underline;
+  /* Remove underline */
+}
+
+/* Define a ruleset for visited links */
+a:visited {
+  color: darkviolet;
+  /* Visited link color (purple) */
+  text-decoration: underline;
+  /* Remove underline */
+}
+
+/* Define a ruleset for links on hover */
+a:hover {
+  color: #1e66ae;
+  /* Hovered link color (orange-red) */
+  text-decoration: underline;
+  /* Add underline on hover */
+}
+
+/* Define a ruleset for active links (clicked) */
+a:active {
+  color: #ff0000;
+  /* Active link color (red) */
+}
+
+/* Footer style */
+.footer {
+  background-color: #333D79;
+  /* Background color for the footer */
+  color: #FAEBEF;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  /* Center-align the text in the footer */
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
